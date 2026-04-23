@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: radial-gradient(#006ce7, #002550, #000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.Cborder{
+    height: 110vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    filter: drop-shadow(8px 8px 18px #0060ce);
+    box-shadow: 2px 3px 18px #006ce7 inset,
+     2px 3px 18px #006ce7 inset;
+
+    animation-name: aniInit;
+    animation-duration: 1s;
+}
+@keyframes aniInit{
+    from{
+        width: 0;
+        overflow: hidden;
+        color: #00000000;
+    }
+    to{
+        width: 40%;
+        overflow: hidden;
+    }
+}
+.Conteudo{
+    background-color: #000000d0;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: monospace;
+    color: #eee;
+    border: 18px solid #002550;
+    gap: 8px;
+    /* box-shadow: 1px 2px 18px #006ce7 inset,
+     1px 2px 18px #006ce7 inset; */
+
+    
+    animation-name:  aniCont;
+    animation-duration: 1s;
+}
+@keyframes aniCont{
+    from{
+        opacity: 0;
+        width: 200%;
+    }
+    to{
+        opacity: 1.5;
+        width: 85%;
+    }
+}
+.Conteudo h1{
+    font-size: 42px;
+}
+.Conteudo p{
+    font-size: 20px;
+    max-width: 90%;
+}
+.Conteudo button, .Fim button{
+    background-color: #0060ce;
+    color: #eee;
+    border: none;
+    padding: 5px;
+    width: 35%;
+    border-radius: 50px;
+    font-family: monospace;
+    font-size: 18px;
+    margin: 8px 0px 8px 0px;
+    cursor: pointer;
+    transition: .2s;
+}
+.Conteudo button:hover{
+    width: 40%;
+    letter-spacing: 1px;
+    transition: .2s;
+}
+.Conteudo button:active{
+    transform: scale(.92);
+    transition: .2s;
+}
+.Conteudo ul{
+    width: calc(60% - 16px);
+    height: 150px;
+    backdrop-filter: blur(8px);
+    border-radius: 5px;
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    overflow-y: scroll;
+}
+.Conteudo ul::-webkit-scrollbar{
+    width: 10px;
+}
+.Conteudo ul::-webkit-scrollbar-thumb{
+    background-color: #eeeeee42;
+    border-radius: 50px;
+}
+
+
+.show{
+    display: flex !important;
+}
+.Fim{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c0;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color: #eee;
+    gap: 20px;
+
+    animation-name: aniB;
+    animation-duration: 1s;
+}
+@keyframes aniB{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1.5;
+    }
+}
+.NumeroCerto{
+    padding: 3%;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+
+    animation-name: aniNum;
+    animation-duration: 1s;
+}
+@keyframes aniNum{
+    from{
+        transform: rotateY(0deg) scale(0);
+    }
+    to{
+        transform: rotateY(360deg) scale(1);
+    }
+}
+.NumeroCerto h1{
+    font-size: 180px;
+    color: #04448d;
+    position: relative  ;
+    z-index: 100;
+}
+.NumeroCerto img{
+    width: 40%;
+    z-index: 10;
+    position: absolute;
+    left: 30%;
+    top: 64%;
+}
+.Fim p{
+    font-size: 50px;
+}
+.Fim button{
+    background-color: transparent;
+    border: 2px solid #f8f8f8;
+    width: 15%;
+}
+.Fim button:hover{
+    background-color: #eee;
+    color: #000;
+    border: 2px solid #000;
+    transition: .2s;
+}
+.Fim button:active{
+    transform: scale(.92);
+    transition: .2s;
+}
+.balao{
+    position: absolute;
+    left: 15%;
+    width: 20%;
+}
+.balao2{
+    position: absolute;
+    right: 15%;
+    width: 20%;
+}

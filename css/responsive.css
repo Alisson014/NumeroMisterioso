@@ -1,0 +1,25 @@
+@media screen and (max-width: 700px){
+    .Cborder{
+        width: 60%;
+    }
+
+    .NumeroCerto h1{
+        font-size: 120px;
+    }
+    .Fim button{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .Cborder{
+        width: 80%;
+    }
+    .Conteudo button{
+        width: 60%;
+    }
+
+    .Fim button{
+        width: 42%;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhar Números</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="Cborder">
+        <div class="Conteudo">
+            <h1>Adivinhe!</h1>
+            <p>Tente encontrar um número de 1 a 100.</p>
+            <button onclick="Verificar()">Tentar</button>
+            <h2>Lista de tentativas</h2>
+            <ul id="ListTents">
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="Fim">
+        <div class="NumeroCerto">
+            <img src="img/gif01-unscreen.gif" alt="Gif-com-estrelas">
+            <h1 id="Numero">14</h1>
+        </div>
+        <p id="score">Acertou!</p>
+        <button onclick="Reiniciar()">Reiniciar</button>
+        <img class="balao" src="img/gif02.gif" alt="Gif-de-balão">
+        <img class="balao2" src="img/gif02.gif" alt="Gif-de-balão">
+    </div>
+    
+    <script src="js/script.js">     </script>
+</body>
+</html>
